@@ -2,7 +2,7 @@
 window.onscroll = function () {
     toggleNavbarSticky();
   };
-  
+
   const navbar = document.getElementById('navbar');
   const sticky = navbar.offsetTop;
   
@@ -25,4 +25,28 @@ window.onscroll = function () {
       });
     });
   });
-  
+
+ // app.js
+ let userInput = "alert('Some security issue!')";
+ eval(userInput);  // BAD: should trigger a security hotspot
+
+//some duplicate code for test run
+ function duplicate1() {
+  console.log("duplicate code");
+}
+
+function duplicate2() {
+  console.log("duplicate code");
+}
+
+/*
+ This is a very long comment line repeated many times for trigerring maintainability issue
+ This is a very long comment line repeated many times
+ This is a very long comment line repeated many times
+*/
+
+/*
+ This is a very long comment line repeated many times
+ This is a very long comment line repeated many times
+ This is a very long comment line repeated many times
+*/
